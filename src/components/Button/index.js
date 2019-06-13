@@ -1,1 +1,2 @@
-import * as Button from './Button';
+// button exporter
+import { Button } from './Button';

@@ -4,7 +4,8 @@
   "description": "component library in react",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "echo 'add build command'"
   },
   "repository": {
     "type": "git",
