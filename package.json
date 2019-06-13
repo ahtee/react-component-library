@@ -2,10 +2,14 @@
   "name": "component-library",
   "version": "1.0.0",
   "description": "component library in react",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
+    "prepublishOnly": "npm run release",
+    "release": "npm run build:dev && npm run build:prod",
+    "build:prod": "NODE_ENV=production rollup -c",
+    "build:dev": "NODE_ENV=development rollup -c",
     "test": "test",
-    "build": "echo 'add build command'"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,21 @@
     "url": "https://github.com/ahtee/react-component-library/issues"
   },
   "homepage": "https://github.com/ahtee/react-component-library#readme",
-  "dependencies": {
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6"
+    "styled-components": "^4.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "rollup": "^1.15.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.2",
+    "rollup-plugin-replace": "^2.2.0"
   }
 }
