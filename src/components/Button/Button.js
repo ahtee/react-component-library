@@ -3,8 +3,9 @@
 
 import React from 'react';
 
-export function Button({ type, onClick, data }) {
+function Button({ type, onClick, data }) {
   <button type={type} onClick={onClick}>
     {data}
   </button>;
 }
+export default Button;
