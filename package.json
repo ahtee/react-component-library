@@ -1,0 +1,23 @@
+{
+  "name": "component-library",
+  "version": "1.0.0",
+  "description": "component library in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtee/react-component-library.git"
+  },
+  "keywords": [
+    "react",
+    "component-library"
+  ],
+  "author": "ahtee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahtee/react-component-library/issues"
+  },
+  "homepage": "https://github.com/ahtee/react-component-library#readme"
+}
