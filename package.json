@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/ahtee/react-component-library/issues"
   },
-  "homepage": "https://github.com/ahtee/react-component-library#readme"
+  "homepage": "https://github.com/ahtee/react-component-library#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
+  }
 }
