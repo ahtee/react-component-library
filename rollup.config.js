@@ -3,6 +3,7 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
+import bundleSize from 'rollup-plugin-bundle-size';
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 // NODE_ENV === 'production' ? './dist/prod.js' : './lib/dev.js';
@@ -23,6 +24,7 @@ export default {
       exclude: 'node_modules/**'
     }),
     resolve(),
-    commonjs()
+    commonjs(),
+    bundleSize()
   ]
 };

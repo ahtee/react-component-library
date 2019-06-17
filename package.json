@@ -45,7 +45,8 @@
   },
   "bundlesize": [
     {
-      "path": "./dist/bundle.js"
+      "path": "./dist/bundle.js",
+      "maxSize": "1 kB"
     }
   ]
 }
