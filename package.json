@@ -49,5 +49,6 @@
       "path": "./dist/bundle.js",
       "maxSize": "1 kB"
     }
-  ]
+  ],
+  "dependencies": {}
 }
